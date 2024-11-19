@@ -3,10 +3,10 @@ import type { Config } from "tailwindcss";
 export default {
     darkMode: ["class"],
     content: [
-    	'./pages/**/*.{js,ts,jsx,tsx}',
-    	'./components/**/*.{js,ts,jsx,tsx}',
-    	'./features/**/*.{js,ts,jsx,tsx}',
-    	'./app/**/*.{js,ts,jsx,tsx}', // For the new `app` directory
+    	'./src/pages/**/*.{js,ts,jsx,tsx}',
+    	'./src/components/**/*.{js,ts,jsx,tsx}',
+    	'./src/features/**/*.{js,ts,jsx,tsx}',
+    	'./src/app/**/*.{js,ts,jsx,tsx}', // For the new `app` directory
   ],
   theme: {
   	extend: {
