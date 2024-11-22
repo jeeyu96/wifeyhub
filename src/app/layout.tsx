@@ -1,8 +1,7 @@
-import { ConvexClientProvider } from "@/components/convex-client-provider";
-
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
-import type { Metadata } from "next";
+import { ConvexClientProvider } from "@/components/convex-client-provider";
 import localFont from "next/font/local";
 import "./globals.css";
 
