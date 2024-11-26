@@ -15,6 +15,8 @@ import { useCreateWorkspaceModal } from "../store/use-create-workspace-modal";
 import { useCreateWorkspace } from "../api/use-create-workspace";
 import { useRouter } from "next/navigation";
 
+import { toast } from "sonner";
+
 
 export const CreateWorkspaceModal = () => { 
     const router = useRouter();
@@ -35,6 +37,7 @@ export const CreateWorkspaceModal = () => {
 
         mutate({ name }, {
             onSuccess(id) {
+                toast.success("workspace created");
                 router.push(`/workspace/${id}`);
                 handleClose();
             },
