@@ -10,15 +10,15 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary text-primary-foreground shadow hover:bg-primary/90",
+          "bg-sky-400 text-white shadow hover:bg-sky-500", // Sky blue for primary
         destructive:
-          "bg-destructive text-destructive-foreground shadow-sm hover:bg-destructive/90",
+          "bg-red-500 text-white shadow-sm hover:bg-red-600", // Red for destructive
         outline:
-          "border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground",
+          "border border-sky-400 text-sky-400 bg-white shadow-sm hover:bg-sky-50", // Outline with sky accents
         secondary:
-          "bg-secondary text-secondary-foreground shadow-sm hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+          "bg-sky-100 text-sky-800 shadow-sm hover:bg-sky-200", // Light sky for secondary
+        ghost: "bg-transparent text-sky-400 hover:bg-sky-100", // Transparent with sky accents
+        link: "text-sky-400 underline-offset-4 hover:underline", // Sky link style
       },
       size: {
         default: "h-9 px-4 py-2",
