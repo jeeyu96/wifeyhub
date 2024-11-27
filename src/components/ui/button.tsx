@@ -19,12 +19,14 @@ const buttonVariants = cva(
           "bg-sky-100 text-sky-800 shadow-sm hover:bg-sky-200", // Light sky for secondary
         ghost: "bg-transparent text-sky-400 hover:bg-sky-100", // Transparent with sky accents
         link: "text-sky-400 underline-offset-4 hover:underline", // Sky link style
+        transparent: "bg-transparent hover:bg-accent/10 text-accent"
       },
       size: {
-        default: "h-9 px-4 py-2",
-        sm: "h-8 rounded-md px-3 text-xs",
-        lg: "h-10 rounded-md px-8",
-        icon: "h-9 w-9",
+        default: "h-10 px-4 py-2",
+        sm: "h-8 rounded-md px-3",
+        lg: "h-11 rounded-md px-8",
+        icon: "h-10 w-10",
+        iconSm: "h-8 w-8"
       },
     },
     defaultVariants: {
